@@ -1,0 +1,1 @@
+# NordicThingy91_52840_connectivity_bridge

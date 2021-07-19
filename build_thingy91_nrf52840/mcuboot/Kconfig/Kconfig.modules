@@ -1,0 +1,72 @@
+menu "nrf (/opt/nordic/ncs/v1.6.0/nrf)"
+osource "/opt/nordic/ncs/v1.6.0/nrf/Kconfig.nrf"
+config ZEPHYR_NRF_MODULE
+	bool
+	default y
+endmenu
+menu "mcuboot (/opt/nordic/ncs/v1.6.0/bootloader/mcuboot)"
+osource "$(ZEPHYR_MCUBOOT_KCONFIG)"
+config ZEPHYR_MCUBOOT_MODULE
+	bool
+	default y
+endmenu
+menu "trusted-firmware-m (/opt/nordic/ncs/v1.6.0/modules/tee/tfm)"
+osource "$(ZEPHYR_TRUSTED_FIRMWARE_M_KCONFIG)"
+config ZEPHYR_TRUSTED_FIRMWARE_M_MODULE
+	bool
+	default y
+endmenu
+menu "cjson (/opt/nordic/ncs/v1.6.0/modules/lib/cjson)"
+osource "$(ZEPHYR_CJSON_KCONFIG)"
+config ZEPHYR_CJSON_MODULE
+	bool
+	default y
+endmenu
+menu "pelion-dm (/opt/nordic/ncs/v1.6.0/modules/lib/pelion-dm)"
+osource "/opt/nordic/ncs/v1.6.0/modules/lib/pelion-dm/zephyr/Kconfig"
+config ZEPHYR_PELION_DM_MODULE
+	bool
+	default y
+endmenu
+menu "cddl-gen (/opt/nordic/ncs/v1.6.0/modules/lib/cddl-gen)"
+osource "$(ZEPHYR_CDDL_GEN_KCONFIG)"
+config ZEPHYR_CDDL_GEN_MODULE
+	bool
+	default y
+endmenu
+menu "memfault-firmware-sdk (/opt/nordic/ncs/v1.6.0/modules/lib/memfault-firmware-sdk)"
+osource "/opt/nordic/ncs/v1.6.0/modules/lib/memfault-firmware-sdk/ports/zephyr/Kconfig"
+config ZEPHYR_MEMFAULT_FIRMWARE_SDK_MODULE
+	bool
+	default y
+endmenu
+menu "hal_nordic (/opt/nordic/ncs/v1.6.0/modules/hal/nordic)"
+osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
+config ZEPHYR_HAL_NORDIC_MODULE
+	bool
+	default y
+endmenu
+menu "mbedtls (/opt/nordic/ncs/v1.6.0/modules/crypto/mbedtls)"
+osource "$(ZEPHYR_MBEDTLS_KCONFIG)"
+config ZEPHYR_MBEDTLS_MODULE
+	bool
+	default y
+endmenu
+menu "TraceRecorder (/opt/nordic/ncs/v1.6.0/modules/debug/TraceRecorder)"
+osource "/opt/nordic/ncs/v1.6.0/modules/debug/TraceRecorder/kernelports/Zephyr/Kconfig"
+config ZEPHYR_TRACERECORDER_MODULE
+	bool
+	default y
+endmenu
+menu "nrfxlib (/opt/nordic/ncs/v1.6.0/nrfxlib)"
+osource "/opt/nordic/ncs/v1.6.0/nrfxlib/Kconfig.nrfxlib"
+config ZEPHYR_NRFXLIB_MODULE
+	bool
+	default y
+endmenu
+menu "connectedhomeip (/opt/nordic/ncs/v1.6.0/modules/lib/matter)"
+osource "/opt/nordic/ncs/v1.6.0/modules/lib/matter/config/nrfconnect/chip-module/Kconfig"
+config ZEPHYR_CONNECTEDHOMEIP_MODULE
+	bool
+	default y
+endmenu

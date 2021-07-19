@@ -1,0 +1,8 @@
+set(mcuboot_KERNEL_HEX_NAME zephyr.hex)
+set(mcuboot_ZEPHYR_BINARY_DIR /opt/nordic/ncs/v1.6.0/nrf/applications/connectivity_bridge/build_thingy91_nrf52840/mcuboot/zephyr)
+set(mcuboot_KERNEL_ELF_NAME zephyr.elf)
+list(APPEND mcuboot_BUILD_BYPRODUCTS /opt/nordic/ncs/v1.6.0/nrf/applications/connectivity_bridge/build_thingy91_nrf52840/mcuboot/zephyr/zephyr.hex)
+list(APPEND mcuboot_BUILD_BYPRODUCTS /opt/nordic/ncs/v1.6.0/nrf/applications/connectivity_bridge/build_thingy91_nrf52840/mcuboot/zephyr/zephyr.elf)
+set(mcuboot_SIGNATURE_KEY_FILE root-rsa-2048.pem)
+list(APPEND mcuboot_PM_YML_DEP_FILES /opt/nordic/ncs/v1.6.0/bootloader/mcuboot/boot/zephyr/pm.yml)
+list(APPEND mcuboot_PM_YML_FILES /opt/nordic/ncs/v1.6.0/nrf/applications/connectivity_bridge/build_thingy91_nrf52840/mcuboot/zephyr/include/generated/pm.yml)
